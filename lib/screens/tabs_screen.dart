@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'categories_screen.dart';
 import 'favorite_screen.dart';
+import '../componentes/main_drawer.dart';
 
 class TabsScreen extends StatefulWidget {
   const TabsScreen({Key? key}) : super(key: key);
@@ -34,15 +35,17 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         title: Text(_titles[_selecteScreenIndex]),
       ),
+      drawer: MainDrawer(),
       body: _screens[_selecteScreenIndex],
       bottomNavigationBar: BottomNavigationBar(
         unselectedItemColor: Colors.white,
         selectedItemColor: Theme.of(context).colorScheme.secondary,
         currentIndex: _selecteScreenIndex,
+        type: BottomNavigationBarType.shifting,
         onTap: _selectScreen,
-        backgroundColor: Theme.of(context).colorScheme.primary,
         items: [
           BottomNavigationBarItem(
+            backgroundColor: Theme.of(context).colorScheme.primary,
             icon: Icon(Icons.category),
             label: "Categorias",
           ),
