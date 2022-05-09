@@ -4,6 +4,7 @@ import './screens/categories_meals_screens.dart';
 import 'utils/app_routes.dart';
 import './screens/meal_detail_screen.dart';
 import './screens/tabs_screen.dart';
+import 'screens/settings_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.HOME: (ctx) => TabsScreen(), //Substituindo o home:
         AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreens(),
         AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
+        AppRoutes.SETTINGS: (ctx) => SettingsScreen(),
       },
     );
   }
