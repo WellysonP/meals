@@ -10,14 +10,6 @@ class CategoryItem extends StatelessWidget {
   });
 
   void _selectCategory(BuildContext context) {
-    // Navigator.of(context).push(
-    //   MaterialPageRoute(
-    //     builder: (_) {
-    //       return CategoriesMealsScreens(category);
-    //     },
-    //   ),
-    // );
-
     Navigator.of(context).pushNamed(
       AppRoutes.CATEGORIES_MEALS,
       arguments: category,
@@ -37,15 +29,16 @@ class CategoryItem extends StatelessWidget {
           style: Theme.of(context).textTheme.headline6,
         ),
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15),
-            gradient: LinearGradient(
-              colors: [
-                category.color.withOpacity(0.5),
-                category.color,
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            )),
+          borderRadius: BorderRadius.circular(15),
+          gradient: LinearGradient(
+            colors: [
+              category.color.withOpacity(0.5),
+              category.color,
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
       ),
     );
   }
