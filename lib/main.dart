@@ -59,6 +59,7 @@ class _MyAppState extends State<MyApp> {
       fontFamily: 'Raleway',
     );
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'DeliMeals',
       //Definições pontuais mais utilizadas de Theme
       theme: theme.copyWith(
