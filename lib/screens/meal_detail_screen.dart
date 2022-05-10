@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meals/data/dummy_data.dart';
 import 'package:meals/models/category.dart';
 import '../models/meal.dart';
+import '../models/settings.dart';
 
 class MealDetailScreen extends StatelessWidget {
   const MealDetailScreen({Key? key}) : super(key: key);
@@ -92,21 +93,15 @@ class MealDetailScreen extends StatelessWidget {
                       Divider(),
                     ],
                   );
-                  // return Card(
-                  //   child: Padding(
-                  //     padding: const EdgeInsets.symmetric(
-                  //       vertical: 5,
-                  //       horizontal: 10,
-                  //     ),
-                  //     child: Text(meal.steps[index]),
-                  //   ),
-                  //   color: Theme.of(context).colorScheme.secondary,
-                  // );
                 }),
               ),
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.star),
+        onPressed: () {},
       ),
     );
   }
