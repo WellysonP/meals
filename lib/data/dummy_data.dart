@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import '../models/meal.dart';
-=======
-
->>>>>>> 9b819e8aca4406a4748e142e2c99023ff7bac5b2
 import '../models/category.dart';
 
 const DUMMY_CATEGORIES = const [
@@ -58,7 +54,6 @@ const DUMMY_CATEGORIES = const [
     color: Colors.teal,
   ),
 ];
-<<<<<<< HEAD
 
 const DUMMY_MEALS = const [
   Meal(
@@ -383,5 +378,3 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
 ];
-=======
->>>>>>> 9b819e8aca4406a4748e142e2c99023ff7bac5b2
