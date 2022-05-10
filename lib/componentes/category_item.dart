@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:meals/utils/app_routes.dart';
 import '../models/category.dart';
 
 class CategoryItem extends StatelessWidget {
+=======
+import '../models/category.dart';
+
+class CategoryItem extends StatelessWidget {
+  const CategoryItem({Key? key}) : super(key: key);
+
+>>>>>>> 9b819e8aca4406a4748e142e2c99023ff7bac5b2
   final Category category;
 
   const CategoryItem({
     required this.category,
   });
 
+<<<<<<< HEAD
   void _selectCategory(BuildContext context) {
     Navigator.of(context).pushNamed(
       AppRoutes.CATEGORIES_MEALS,
@@ -41,5 +50,10 @@ class CategoryItem extends StatelessWidget {
         ),
       ),
     );
+=======
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+>>>>>>> 9b819e8aca4406a4748e142e2c99023ff7bac5b2
   }
 }
